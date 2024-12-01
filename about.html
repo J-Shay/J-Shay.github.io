@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+    Name: Jared Shay (JS)
+    Filename: template.html
+    Date: 11/26/2024
+-->
+<html lang="en">
+    <head>
+        <title>ShayMusicStudio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Shay Music Studio</h1>
+            <div id="logo"><img alt="Picture of a bassoon." src="Images/bassoon.jpg"></div>
+        </header>
+
+
+
+        <!--Navigation bar of links to each page as specified in sitemap-->
+        <div id="navbar">
+            <nav>
+                <ul id="menu-links">
+                    <li>&#9835;<a href="index.html">Home</a>&#9835;</li>
+                    <li>&#9835;<a href="about.html">About</a>&#9835;</li>
+                    <li>&#9835;<a href="lessons.html">Lessons</a>&#9835;</li> 
+                    <li>&#9835;<a href="contact.html">Contact</a>&#9835;</li>
+                </ul>
+            </nav>
+            <a id="hamburger" onclick="hamburger()">&#9776;</a>
+        </div>
+
+
+
+        <!--Main webpage content with 2 images and their descriptions, embedded videos of performances-->
+        <main>
+            <img alt="Jared playing bassoon" src="Images/Quintet_Perform.jpeg">
+            <aside class="home_about">
+                <h3>Professional Life</h3>
+                <p>I am still actively playing bassoon and have a high standard of my own playing. I am a professional bassoonist, saxophonist, and teacher. I have been teaching bassoon and saxophone for just over 10 years. I am currently a sub for the Fort Collins Symphony, and have performed and been invited to perform with other professional symphonies such as the Norman Philharmonic and the Oklahoma City Repertory Theater. I am certified to teach K-12 music and early childhood music.</p>
+                <p>As I work full-time as a support technician for Alchemer, I do not always have the privelege to practice every single day, but I make sure to keep myself engaged in music whether I am playing bassoon or not.</p>
+            </aside>
+
+            <h3 class="title">Personal Life</h3>
+
+            <article class="personal_life">
+                <img alt="" src="Images/IMG_6536.jpeg">
+                <img alt="" src="Images/Bsn_Sax_Luna.jpeg">
+                <img alt="" src="Images/bassooners2.jpg">
+                <p>I am currently in school as well as working full-time and teaching. I do not have much free time, but with the free time I do have I love to play other instruments that aren't bassoon/saxophone. I like to arrange music for different ensembles, and play duets with my wife. I am very much into video games, mainly indie and MMORPG's are what I play. Other pasttimes for me include: Archery, Coding, and watching shows with my wife and kitty!</p>
+            </article>
+
+            <h2 class="title">My Approach</h2>
+
+            <article class="approach">
+                <p>My approach to teaching music is to begin by focusing on good embouchure, rhythm, and technique. When beginning with newer students I primarily will focus on getting a proper sound out of the instrument which entails embouchure practice. Afterwards, I make sure that my students are playing as much music as they can. I am very intentional about assigning etudes that are within my students capabilities but not terribly easy! Technique and rhythm are often built through excessive playing and then we can begin thinking about tone, vibrato, and theory.</p>
+                <p>During the 2nd or 3rd years of playing I will begin talking about reed making or reed maintenance along with our studies of vibrato and tone production. This often helps students understand that they can have a big part in their own tone production through reed maintenance.</p>
+            </article>
+        </main>
+
+
+        <!--Footer info such as Privacy, Terms, Contact etc.-->        
+        <footer>
+            <div id="foot_column1">
+                <p>&copy; Copyright 2024 &#9835;</p>
+                <p>Terms & Conditions &#9835;</p>
+                <p>Privacy Policy &#9835;</p>
+            </div>
+            <div id="foot_column2">
+                <p>Contact: <a href="mailto:jshay22@student.cccs.edu" class="mail">jshay22@student.cccs.edu</a> &#9835;</p>
+                <p><a href="lessons.html">SIGN UP FOR LESSONS </a>&#9835;</p>
+                <p><a href="about.html">Learn More</a> &#9835;</p>
+            </div>
+        </footer>
+        <script src="Scripts/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,420 @@
+/* 
+Jared Shay (JS)
+11/26/2024
+*/
+
+/* CSS Reset */
+body, main, div, img, header, nav, footer, h1, h2, h3, ul, figure, figcaption, article, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #E4C59E;
+    color: #322C2B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    clear: both;
+}
+/* 
+        Using a Mobile-First Approach
+/*
+/* header text style */
+header {
+    text-align: center;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+
+
+
+
+/* link color and decoration*/
+a {
+    color: #803D3B;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+}
+
+
+
+/* mobile navbar elements */
+#hamburger {
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+nav {
+    display: block;
+    text-align: center;
+}
+nav li {
+    border-bottom: #322C2B solid;
+    padding: 1%;
+    font-size: 1.25em;
+}
+#logo {
+    position: sticky;
+    left: 10px;
+    top: 10px;
+    float: left;
+}
+header img {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+/* image resize */
+img {
+    height: 300px;
+    width: 300px;
+    border: #322C2B solid 3px;
+    border-radius: 8px;
+}
+.overlay {
+    position: relative;
+    margin: 2% auto;
+    max-width: 400px;
+}
+.blend {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+
+
+
+/* main element styling */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    text-align: left;
+    padding: 3%;
+}
+.home_about p:nth-child(3){
+    display: none;
+}
+main h1 {
+    padding-top: 5%;
+    margin: auto;
+    grid-column: 1 / span 2;
+}
+
+
+/* Article Styling */
+main article {
+    text-align: center;
+    grid-column: auto / span 2;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+article img {
+    margin: 3%;
+    width: 400px;
+}
+article p {
+    padding-bottom: 3%;
+    text-align: left;
+}
+.approach {
+    padding-bottom: 20%;
+}
+.title {
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+
+/* Lesson Offerings Divs */
+.lessons {
+    display: block;
+    text-align: center;
+}
+#lesson_top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5%;
+}
+
+/* 
+#offer_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#offer_grid h2 {
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+#offer_grid article {
+    text-align: center;
+    grid-column: 1 / span 3;
+}
+*/
+
+
+/* Testimonials Div */
+#testimonials img {
+    height: 100px;
+    width: 200px;
+}
+#testimonials {
+    padding-bottom: 5%;
+}
+
+/*
+#testimonials h2 {
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+#testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+*/
+
+
+/* Location */
+#location {
+    text-align: center;
+    grid-column: 1 / span 2;
+}
+#location h2 {
+    padding-bottom: 4%;
+}
+#location h3 {
+    padding-bottom: 0;
+}
+
+
+/* Videos */
+video {
+    width: 400px;
+    height: 250px;
+}
+.contact {
+    text-align: center;
+}
+#videos {
+    grid-column: 1 / span 2;
+}
+
+
+
+/* Why Lessons Div */
+#lesson_reason h2 {
+    text-align: center;
+}
+#lesson_reason img {
+    width: 400px;
+}
+
+
+
+/* Contact Forms */
+#forms {
+    grid-column: 1 / span 2;
+}
+
+
+
+/* Table Style */
+main h3 {
+    text-align: center;
+    padding-bottom: 4%;
+}
+#offered_lessons {
+    margin: auto;
+}
+#offered_lessons h3 {
+    border-bottom: #322C2B solid 2px;
+}
+#lesson_pricing {
+    text-align: center;
+    margin: auto;
+}
+#lesson_pricing h3 {
+    border-bottom: #322C2B solid 2px;
+}
+tr :first-child {
+    color: #000;
+    text-align: left;
+}
+th {
+    color: #803D3B;
+}
+
+
+
+/* Form style */
+.grid {
+    grid-column: 1 / span 2;
+    padding-bottom: 20%;
+}
+legend {
+    text-align: center;
+}
+fieldset {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5% auto;
+}
+fieldset input {
+    margin-bottom: 4%;
+}
+.btn {
+    grid-column: 1 / span 2;
+    margin: auto;
+}
+.bigbox {
+    width: 400px;
+    height: 100px;
+}
+
+
+
+
+/* footer style elements */
+footer {
+    padding-top: 5%;
+    text-align: center;
+}
+footer div {
+    display: inline-block;
+}
+
+
+
+
+
+
+/* footer positioning */
+/*
+footer {
+display: grid;
+grid-template-columns: auto auto;
+position: static;
+}
+#foot_column1 {
+text-align: right;
+padding-right: 5%;
+}
+#foot_column2 {
+text-align: left;
+padding-left: 25%;
+}
+*/
+
+
+
+
+
+
+/* Tablet-Laptop Media Query */
+@media screen and (min-width: 700px) and (max-width: 1249px) {
+    #hamburger {
+        display: none;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 3%;
+        border-bottom: none;
+    }
+/*
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        position: relative;
+    }
+    #foot_column1 {
+        text-align: right;
+        padding-right: 5%;
+    }
+    #foot_column2 {
+        text-align: left;
+        padding-left: 15%;
+    }
+*/
+    .home_about p:nth-child(3) {
+        display: block;
+    }
+}
+
+
+/* Dektop Media Query */
+@media screen and (min-width: 1250px) {
+    #hamburger {
+        display: none;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 3%;
+        padding-right: 7%;
+        border-bottom: none;
+    }
+
+
+    /* main element styling */
+    main {
+        margin: 0;
+        border: 0;
+        background-color: #E4C59E;
+        color: #322C2B;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        clear: both;
+    }
+    main h1 {
+        padding-top: 5%;
+        margin: auto;
+        grid-column: 1 / span 3;
+    }
+    .inspiration {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        font-weight: bold;
+        gap: 2%;
+    }
+    .inspiration p {
+        text-align: left;
+    }
+
+
+/*
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        position: relative;
+    }
+    #foot_column1 {
+        text-align: right;
+        padding-right: 5%;
+    }
+    #foot_column2 {
+        text-align: left;
+        padding-left: 10%;
+    }
+*/
+    .home_about p:nth-child(3) {
+        display: block;
+    }
+}

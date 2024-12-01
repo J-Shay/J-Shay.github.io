@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+    Name: Jared Shay (JS)
+    Filename: template.html
+    Date: 11/26/2024
+-->
+<html lang="en">
+    <head>
+        <title>ShayMusicStudio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Shay Music Studio</h1>
+            <div id="logo"><img alt="Picture of a bassoon." src="Images/bassoon.jpg"></div>
+        </header>
+
+
+
+        <!--Navigation bar of links to each page as specified in sitemap-->
+        <div id="navbar">
+            <nav>
+                <ul id="menu-links">
+                    <li>&#9835;<a href="index.html">Home</a>&#9835;</li>
+                    <li>&#9835;<a href="about.html">About</a>&#9835;</li>
+                    <li>&#9835;<a href="lessons.html">Lessons</a>&#9835;</li> 
+                    <li>&#9835;<a href="contact.html">Contact</a>&#9835;</li>
+                </ul>
+            </nav>
+            <a id="hamburger" onclick="hamburger()">&#9776;</a>
+        </div>
+
+
+
+        <!--Main webpage content with 2 images and their descriptions, embedded videos of performances-->
+        <main class="lessons">
+            <div id="lesson_top">
+                <div id="offered_lessons">
+                    <h3>Lessons Offered:</h3>
+                    <ul>
+                        <li>Bassoon</li>
+                        <li>Grades 5-9 Saxophone</li>
+                        <li>Grades 5&6 Woodwind Lessons</li>
+                        <li>Music Theory</li>
+                    </ul>
+                </div>
+
+                <div id="lesson_pricing">
+                    <h3>Lesson Pricing</h3>
+                    <table>
+                        <tr><!-- row 1 -->
+                            <th>Lesson Type</th>
+                            <th>30-minutes</th>
+                            <th>45-minutes</th>
+                            <th>60-minutes</th>
+                        </tr>
+                        <tr><!-- row 2 -->
+                            <th>Bassoon</th>
+                            <td>&#36;40</td>
+                            <td>&#36;45</td>
+                            <td>&#36;50</td>
+                        </tr>
+                        <tr><!-- row 3 -->
+                            <th>Saxophone</th>
+                            <td>&#36;35</td>
+                            <td>&#36;40</td>
+                            <td>&#36;45</td>
+                        </tr>
+                        <tr><!-- row 4 -->
+                            <th>Other Winds</th>
+                            <td>&#36;25</td>
+                            <td>&#36;30</td>
+                            <td>&#36;35</td>
+                        </tr>
+                        <tr><!-- row 5 -->
+                            <th>Theory</th>
+                            <td>&#36;30</td>
+                            <td>&#36;35</td>
+                            <td>&#36;40</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div id="offer_grid">
+                <h2>What You Can Learn</h2>
+                <article class="perform_offer">
+                    <img alt="Image of a contrabassoon in it's stand surrounded by chairs." src="Images/contrabassoon.jpg">
+                    <h3>Performing:</h3>
+                    <p>I am a big advocate of music education because music itself has always been my outlet of expression and my goal when teaching is to make it an outlet for my students as well. Performing and practicing does not have to be stressful, it can become relaxing instead. I always tell my students that my job is to make them the teacher so that they do not need me anymore!</p>
+                </article>
+                
+                <article class="theory_offer">
+                    <figure class="overlay">
+                        <img alt="The circle of 5ths in music theory, showing major and minor keys." src="Images/Theory.jpg">
+                        <figcaption class="blend">The Circle of Fifths Depicting All Major and Minor Scales</figcaption>
+                    </figure>
+                    <h3>Theory:</h3>
+                    <p>When I teach performance there is often some theory involved with lessons. Theory is an essential part of music because it is history of what has happened or what is "normal." The most important reason for learning theory is to make reading easier and guide expression when playing. We learn the rules of theory so that we can break them in more and more interesting ways! This is often how new music is born and how creativity is spread!</p>
+                </article>
+                
+                <article class="reed_offer">
+                    <img alt="Four Bassoon double reeds laying on sheet music" src="Images/Reeds.jpg">
+                    <h3>Reed Making:</h3>
+                    <p>When students are playing a reeded instrument I find that it is important to give them a reminder that without the vibration of the reed against a mouthpiece, or against itself, we could not produce a sound! Starting around the 3rd year of playing I will often introduce how to adjust reeds or create their own, in the case of double reeds. This gives agency to many students since they are then the creator of their sound production off and on the instrument. Quoting my former professor, "The reed is half the instrument."</p>
+                </article>
+            </div>
+
+            <div id="testimonials">
+                <h2>Testimonials</h2>
+                <article class="testimonial1">
+                    <aside>"My 13 year old son has so far taken a half dozen or so lessons from Jared (both online and in person), and it is going great. Jared has developed a great rapport with him and seems very thoughtful about how is the lessons are organized. Jared has also been flexible about rescheduling, which for a parent of said boy is super helpful."</aside>
+                </article>
+                <article class="testimonial2">
+                    <aside>"The teacher is very informed and prepared therefore he is also very didactic. A must have instructor."</aside>
+                </article>
+                <article class="testimonial3">
+                    <aside>"Jared is very patient and gives great feedback for getting better."</aside>
+                </article>
+                <article class="testimonial4">
+                    <aside>"Knowledgeable, informative, helpful, timely, patient, and well-liked by my 14-year-old aspiring bassoonist. Recommend!"</aside>
+                </article>
+            </div>
+
+            <div id="lesson_reason">
+                <h2>Why Take Lessons?</h2>
+                <img alt="Group of bassoonists with their instruments" src="Images/Bassooners6.jpg">
+                <p>Lessons are a great way for students to learn about their instrument, music, and how to practice. Everybody has a favorite way to learn, and lessons are a way for students to explore the different ways we can approach music. I have had students that enjoy learning about difficult excerpts early on, while some prefer to learn pop music on their instrument by ear! If they are playing and enjoying it, they are already way ahead of many other students.</p>
+            </div>
+        </main>
+
+
+        <!--Footer info such as Privacy, Terms, Contact etc.-->        
+        <footer>
+            <div id="foot_column1">
+                <p>&copy; Copyright 2024 &#9835;</p>
+                <p>Terms & Conditions &#9835;</p>
+                <p>Privacy Policy &#9835;</p>
+            </div>
+            <div id="foot_column2">
+                <p>Contact: <a href="mailto:jshay22@student.cccs.edu" class="mail">jshay22@student.cccs.edu</a> &#9835;</p>
+                <p><a href="lessons.html">SIGN UP FOR LESSONS </a>&#9835;</p>
+                <p><a href="about.html">Learn More</a> &#9835;</p>
+            </div>
+        </footer>
+        <script src="Scripts/script.js"></script>
+    </body>
+</html>

@@ -1,1 +1,107 @@
-Hello World
+<!DOCTYPE html>
+<!--
+    Name: Jared Shay (JS)
+    Filename: index.html
+    Date: 11/26/2024
+-->
+<html lang="en">
+    <head>
+        <title>ShayMusicStudio</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="Images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="Images/favicon/site.webmanifest">
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        
+        <header>
+            <h1>Shay Music Studio</h1>
+            <div id="logo"><img alt="Picture of a bassoon." src="Images/bassoon.jpg"></div>
+        </header>
+
+
+
+        <!--Navigation bar of links to each page as specified in sitemap-->
+        <div id="navbar">
+            <nav>
+                <ul id="menu-links">
+                    <li>&#9835;<a href="index.html">Home</a>&#9835;</li>
+                    <li>&#9835;<a href="about.html">About</a>&#9835;</li>
+                    <li>&#9835;<a href="lessons.html">Lessons</a>&#9835;</li> 
+                    <li>&#9835;<a href="contact.html">Contact</a>&#9835;</li>
+                </ul>
+            </nav>
+            <a id="hamburger" onclick="hamburger()">&#9776;</a>
+        </div>
+
+
+
+        <!--Main webpage content with 2 images and their descriptions, embedded videos of performances-->
+        <main>
+            <img alt="Jared playing bassoon" src="Images/Bsn_Solo.jpeg">
+            <aside class="home_about">
+                <h3>My Experience</h3>
+                <p>I am a professional bassoonist, saxophonist, and teacher. I have been teaching bassoon and saxophone for just over 10 years. I am currently a sub for the Fort Collins Symphony, and have performed and been invited to perform with other professional symphonies such as the Norman Philharmonic and the Oklahoma City Repertory Theater. I am certified to teach K-12 music and early childhood music.</p>
+                <p>I have taught Early Childhood music, Elementary music, Middle School and High School Band and Orchestra as well as community bands such as the New Horizons Band in Norman, OK. I am originally from Owasso, OK and received both my Music Education and Music Performance (bassoon) degrees from The University of Oklahoma. I moved to Lafayette, CO 4 years ago with my cat, Luna, and wife, Kristen.</p>
+            </aside>
+
+            <h1>Influences/Teachers</h1>
+
+            <article class="inspiration">
+                <div id="Ackmann">
+                    <h2>Rodney Ackmann</h2>
+                    <img alt="Rodney Ackmann playing with the Oklahoma City Philharmonic" src="Images/Rodney_Ackmann.jpeg">
+                    <p>Rodney Ackmann was my professor of bassoon at the University of Oklahoma (OU) where I received my Bachelor's in Music Education and Bachelor's in Woodwind Performance (Bassoon). He taught me more than just bassoon during my time at OU, he taught me how to be the most professional performer and teacher possible.</p>
+                </div>
+                <div id="Thunemann">
+                    <h2>Klaus Thunemann</h2>
+                    <img alt="Klaus Thunemann holding a bassoon" src="Images/Klaus_Thunemann.jpg">
+                    <p>Klaus Thunemann has been my favorite bassoonist to listen to for recordings of famous concertos and sonatas. His vast amounts of bassoon recordings inspired me to improve my tone and technique.</p>
+                </div>
+                <div id="Racz">
+                    <h2>Mathias Racz</h2>
+                    <img alt="Mathias Racz holding a bassoon" src="Images/Mathias_Racz.jpeg">
+                    <p>Mathias Racz has been my most recent inspiration through recordings. Racz holds a professorship for bassoon at the Hochschule für Musik und Theater Zürich. He has produced recordings of more modern music for bassoon which has expanded my range from just classical bassoon.</p>
+                </div>
+            </article>
+
+            <form class="grid">
+                <fieldset>
+                    <legend>Enroll In Lessons</legend>
+
+                    <label for="Name">Name:</label>
+                    <input type="text" name="Name" id="Name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="lbox">What lessons would you like, and what length would you prefer?</label>
+                    <input type="text" name="lbox" id="lbox" class="bigbox">
+                    <input type="submit" id="submit" value="Send" class="btn">
+                </fieldset>
+            </form>
+        </main>
+
+
+        <!--Footer info such as Privacy, Terms, Contact etc.-->        
+        <footer>
+            <div id="foot_column1">
+                <p>&copy; Copyright 2024 &#9835;</p>
+                <p>Terms & Conditions &#9835;</p>
+                <p>Privacy Policy &#9835;</p>
+            </div>
+            <div id="foot_column2">
+                <p>Contact: <a href="mailto:jshay22@student.cccs.edu" class="mail">jshay22@student.cccs.edu</a> &#9835;</p>
+                <p><a href="lessons.html">SIGN UP FOR LESSONS </a>&#9835;</p>
+                <p><a href="about.html">Learn More</a> &#9835;</p>
+            </div>
+        </footer>
+        <script src="Scripts/script.js"></script>
+    </body>
+</html>
